@@ -31,7 +31,7 @@ function CountRenderer(){
 }
 
 function Buttons() {
-  const [count,setCount] = useRecoilState(countAtom); //we are doing the both here coz both count and setcount is needed here 
+  const setCount = useSetRecoilState(countAtom);
 
   return <div>
     <button style={{margin:10,color:"pink"}} onClick={() => {
