@@ -7,7 +7,7 @@ export const countAtom = atom({
 
 //defining my recoil selector >
 
-export const evenSelector = selector({
+ const evenSelector = selector({
     key : "evenSelector",
     get: ({get}) => {
         const count = get(countAtom); //we are passsing count atom here because the evenselector depends on the count state so we will put the state or atom in this case of those which are dependent 
