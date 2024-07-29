@@ -54,7 +54,7 @@ function EvenCountRenderer() {
 
 
 function Buttons() {
-  const setCount = useSetRecoilState(countAtom); //if we use count here it is nothing but making the buttons re render when we click on it but it shouldnt so we are just updating the count and using the usesetrecoil state
+  const setCount = useRecoilState(countAtom); //if we use count here it is nothing but making the buttons re render when we click on it but it shouldnt so we are just updating the count and using the usesetrecoil state
 
   return <div>
     <button style={{margin:10,color:"pink"}} onClick={() => {
