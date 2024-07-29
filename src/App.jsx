@@ -5,9 +5,9 @@ import { countAtom, evenSelector } from './store/atoms/count';
 
 function App() {
   
-  return (
+  return ( //we cover everything inside this recoil root tag
     <div>
-      <RecoilRoot>
+      <RecoilRoot> 
         <Count  />  
       </RecoilRoot> 
     </div>
