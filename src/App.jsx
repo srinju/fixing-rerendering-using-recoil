@@ -24,6 +24,10 @@ function Count() {
   </div>
 }
 
+//useRecoilState --> this is like usestate in react where you basically put two values one is for the state and one is for how to update the state 
+//useRecoilValue --> this is for the currrent value of the state we want to use in a component , we use this when we dont care about updating the state
+//useSetRecoilValue --> this is like setocunt where you want to update the state of the component , exactly same as setCount in react 
+
 function CountRenderer(){
   const count = useRecoilValue(countAtom); //we just need the final value of the count 
   return <div>
