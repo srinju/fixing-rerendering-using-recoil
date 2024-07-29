@@ -1,6 +1,6 @@
 import { atom, selector } from "recoil";
 
-export const countAtom = atom({
+export const countAtom = atom({ //this is how we store states in recoil
     key: "countAtom", //unique key for each atom 
     default : 0 //default value of the state 
 });
