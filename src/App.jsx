@@ -52,7 +52,7 @@ function EvenCountRenderer() {
 }
 
 
-
+//we use useSetRecoilState when we dont want unncecassary re renders here below we see that the count is not required so we only do setcount as useSetRecoilState 
 function Buttons() {
   const setCount = useSetRecoilState(countAtom); //if we use count here it is nothing but making the buttons re render when we click on it but it shouldnt so we are just updating the count and using the usesetrecoil state
 
